@@ -3,7 +3,8 @@ kind: Deployment
 metadata:
   name: test-app
   namespace: argocd
-  env: dev
+labels:
+    env: dev
 spec:
   replicas: 1
   selector:
