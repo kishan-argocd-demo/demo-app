@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mywebapp-deployment
+  name: test-app
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
-      app: mywebapp
+      app: test-app
   template:
     metadata:
       labels:
-        app: mywebapp
+        app: test-app
     spec:
       containers:
-      - name: mywebapp
-        image: 1nfosecsingh/mywebapp:v1.2
-        ports:
-        - containerPort: 80
+        - name: app
+          image: nginx:1.25
+          ports:
+            - containerPort: 80
