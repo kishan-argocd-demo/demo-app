@@ -1,3 +1,0 @@
-kustomize:
-  images:
-  - asia-south1-docker.pkg.dev/growthschool-core/demo-app/production-amd64=asia-south1-docker.pkg.dev/growthschool-core/demo-app/production-amd64:latest@sha256:2bd80735da6afc49e5d28f6069e737ded79d538f3cddb8c6bac95e5440c860b4
