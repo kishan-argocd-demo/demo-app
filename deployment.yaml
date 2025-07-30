@@ -4,7 +4,7 @@ metadata:
   name: test-app
   namespace: argocd
   labels:
-    env: dev
+    env: staging
 spec:
   replicas: 1
   selector:
